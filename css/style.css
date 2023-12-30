@@ -348,6 +348,9 @@ main{
     background-image: url('../images/slide8.png');
 }
 
+footer{
+    width: 100%;
+}
 
 .footer_container{
     display: grid;
@@ -355,15 +358,17 @@ main{
     color: #FFFFFF;
     padding: 40px 10px 40px 10px;
     width: 100%;
-    gap: 15%;
+    gap: 20px;
 }
 .left_side{
     display: grid;
     grid-template-columns:  10% 90%;
     align-items: center;
+    justify-items: baseline;
 }
 .footer_text{
     font-size: 1.1rem;
+    margin-left: 10px;
     padding: 0 10px 0 10px;
 }
 .links_container{
@@ -377,12 +382,12 @@ main{
     display: grid;
     grid-template-columns:  50% 50%;
     align-items: center;
+    justify-items: center;
 }
 .footer_links a{
     list-style: none;
     text-decoration: none;
     color: #FFFFFF;
-    width: fit-content;
 }
 .footer_links h6, .footer_social h6{
     font-size: 1.8rem;
