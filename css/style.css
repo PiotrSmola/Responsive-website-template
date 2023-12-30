@@ -195,11 +195,10 @@ button:hover{
 main{
     background-color: #FFFFFF;
     margin: auto;
-    padding: 20px 20px 20px 20px;
 }
 
 .text_and_image{
-    padding: 20px 20px 0 20px;
+    padding: 40px 40px 0 40px;
     margin-bottom: 3vh;
 }
 
@@ -212,7 +211,7 @@ main{
     font-size: 1.1rem;
 }
 .main_image img{
-    width: 75%;
+    width: 65%;
     border-radius: 15%;
     
 }
@@ -222,8 +221,8 @@ main{
     align-items: center;
 }
 .text_and_image h1{
-    font-size: 2.5rem;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-family: 'Montserrat', serif;
     color: #000000;
     margin-bottom: 20px;
 }
@@ -264,11 +263,73 @@ main{
     margin: 0 10px 0 10px;
 }
 
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    margin: 0;
+    padding: 10px 0 10px 0;
+    background-color: #1b1b1b;
+}
+
+.slider_container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 30px;
+    height: 22vh;
+    background-color: slateblue;
+    margin: 10px;
+    cursor: pointer;
+    transition: width 0.3s ease-in, height 0.3s ease-in;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.hidden_checkbox:checked + .box {
+    width: 25vw;
+    height: 30vh;
+}
+
+.hidden_checkbox{
+    display: none;
+}
+.b1{
+    background-image: url('../images/slide1.png');
+}
+.b2{
+    background-image: url('../images/slide2.png');
+}
+.b3{
+    background-image: url('../images/slide3.png');
+}
+.b4{
+    background-image: url('../images/slide4.png');
+}
+.b5{
+    background-image: url('../images/slide5.png');
+}
+.b6{
+    background-image: url('../images/slide6.png');
+}
+.b7{
+    background-image: url('../images/slide7.png');
+}
+.b8{
+    background-image: url('../images/slide8.png');
+}
 
 
-
-
-
+footer{
+    color: #FFFFFF;
+}
 
 .footer_logo img {
     height: 80px;
