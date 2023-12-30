@@ -3,11 +3,12 @@
     --second-color: #6a5acd;
     --third-color: #1b1b1b;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
     height: 100%;
     background-color: #2a2a2a;
     display: flex;
@@ -280,7 +281,7 @@ main{
 .card p {
     text-align: center;
     color: #333;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 0 10px 0 10px;
 }
 
@@ -348,7 +349,7 @@ main{
 }
 
 
-footer{
+.footer_container{
     display: grid;
     grid-template-columns: 40% 60%;
     color: #FFFFFF;
@@ -391,4 +392,15 @@ footer{
 .footer_logo img {
     height: 80px;
     padding: 10px;
+}
+
+.copyright{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 1rem;
 }
