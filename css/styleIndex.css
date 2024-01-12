@@ -3,12 +3,15 @@
     --second-color: #6a5acd;
     --third-color: #1b1b1b;
     --fourth-color: #5f99f5;
+    --fourth-color: #5f99f5;
+    --fifth-color: rgb(14, 4, 23);
 }
 html {
     scroll-behavior: smooth;
 }
 body {
-    margin: 0;
+    box-sizing: border-box;
+    margin: auto;
     padding: 0;
     height: 100%;
     background-color: #2a2a2a;
@@ -16,20 +19,21 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    
 }
 
 
 .navbar {
+    box-sizing: border-box;
     display: flex;
+    margin: auto;
+    width: 100%;
     align-items: center;
     background-color: #2a2a2a;
     overflow: hidden;
     position: fixed;
     top: 0;
-    width: 100%;
     z-index: 1000;
-    margin-bottom: 1000px;
 }
 
 .logo img {
@@ -341,8 +345,8 @@ main{
     display: flex;
     justify-content: center;
     background-color: #f7f7f7;
-    padding: 10px 0 40px 0;
-    margin-top: 3vh;
+    padding: 0 0 40px 0;
+    padding-top: 3vh;
     box-sizing: border-box;
 }
 
@@ -520,7 +524,7 @@ footer{
 
 .copyright{
     display: flex;
-    width: 100%;
+    flex: 1;
     justify-content: center;
     align-items: center;
     background-color: #000000;

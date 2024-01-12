@@ -9,7 +9,8 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    margin: 0;
+    box-sizing: border-box;
+    margin: auto;
     padding: 0;
     height: 100%;
     background-color: #2a2a2a;
@@ -17,20 +18,21 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    
 }
 
 
 .navbar {
+    box-sizing: border-box;
     display: flex;
+    margin: auto;
+    width: 100%;
     align-items: center;
     background-color: #2a2a2a;
     overflow: hidden;
     position: fixed;
     top: 0;
-    width: 100%;
     z-index: 1000;
-    margin-bottom: 1000px;
 }
 
 .logo img {
@@ -202,15 +204,73 @@ header{
 
 main{
     background-color: #FFFFFF;
-    height: 80vh;
     width: 100%;
     margin: auto;
 }
 
+.introduction{
+    height: 58vh;
+}
+.introduction_images{
+    position: relative;
+}
+
+.intro_img1{
+    position: absolute;
+    border-radius: 7px;
+    z-index: 1;
+    width: 300px;
+    height: 300px;
+    top: 40px;
+    left: 270px;
+}
+.intro_img2{
+    position: absolute;
+    border-radius: 7px;
+    z-index: 1;
+    width: 300px;
+    height: 300px;
+    top: 120px;
+    left: 370px;
+}
+.intro_img3{
+    position: absolute;
+    border-radius: 7px;
+    z-index: 1;
+    width: 300px;
+    height: 300px;
+    top: 200px;
+    left: 470px;
+}
+
+.introduction_text{
+    position: relative;
+}
+.introduction_text h2{
+    position: absolute;
+    top: 70px;
+    right: 35%;
+    font-size: 2.8rem;
+    color: var(--fifth-color);
+    font-family: 'Montserrat', sans-serif;
+}
+.introduction_text p{
+    position: absolute;
+    width: 40%;
+    top: 170px;
+    right: 13%;
+    font-size: 1.4rem;
+    color: var(--fifth-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.our_people{
+    height: 80vh;
+}
 
 
 .feature_cards {
-    
+    height: 40vh;
 }
 
 .card {
@@ -308,7 +368,7 @@ footer{
 
 .copyright{
     display: flex;
-    width: 100%;
+    flex: 1;    
     justify-content: center;
     align-items: center;
     background-color: #000000;
