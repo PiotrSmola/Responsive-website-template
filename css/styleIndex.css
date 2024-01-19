@@ -209,6 +209,10 @@ main{
     margin: auto;
 }
 
+hr{
+    margin: 0;
+}
+
 .text_and_image{
     display: flex;
     align-items: center;

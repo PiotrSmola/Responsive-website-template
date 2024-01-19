@@ -118,6 +118,9 @@ header{
     filter: grayscale(0%)
 }
 
+
+
+
 .banner_image {
     background-image: url(../images/aboutUs/aboutUs_banner.png);
     background-repeat: no-repeat;
@@ -135,7 +138,17 @@ header{
     align-items: center;
     color: #FFFFFF;
     z-index: 1;
+    background: 
+    radial-gradient(var(--second-color) 3px, transparent 4px),
+    radial-gradient(black 3px, transparent 4px),
+    linear-gradient(#00000000 3px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #af00008a 75px, #7601019b 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #1900698b 76px, #4500ad7e 77px, transparent 78px, transparent 109px),
+  #00000000;
+  background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
 }
+
 
 .upper_banner_text{
     position: absolute;
@@ -208,9 +221,13 @@ main{
     width: 100%;
     margin: auto;
 }
+hr{
+    margin: 0;
+}
 
 .introduction{
     height: 54vh;
+    background: linear-gradient(90deg, rgb(6, 23, 38) 0%,  rgb(255, 255, 255) 40%, rgb(255, 232, 177) 100%);
 }
 .introduction_images{
     position: relative;
@@ -273,6 +290,8 @@ main{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: #010326;
+    color: #FFFFFF;
 }
 .exp_text{
     position: relative;
@@ -290,11 +309,11 @@ main{
 }
 .exp_text h2{
     font-size: 2.2rem;
-    color: var(--fifth-color);
+    color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
     margin-top: 15px;
 }
-.exp_main_text{
+.exp_main_text{ /*dodaj listę z doświadczeniem, może coś z ikonami*/
     font-size: 1.3rem;
     font-family: 'Poppins', sans-serif; /*inną czcionkę*/
     margin: 15px 15px 0 0;
@@ -305,8 +324,7 @@ main{
     position: relative;
     width: 350px;
     height: 350px;
-    clip-path: polygon(0 0, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 0 100%, 32% 65%, 32% 41%);
-    z-index: 2;
+    clip-path: polygon(0 0, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 0 100%, 25% 64%, 25% 39%);    z-index: 2;
 }
 
 .exp_image{
@@ -319,7 +337,7 @@ main{
     height: 350px;
     top:0;
     right:175px;
-    background-color: #93bcfd;
+    background-color: #3c017b;
     border-radius: 50%;
     z-index: 1;
 }
@@ -335,8 +353,11 @@ main{
 }
 
 
-.feature_cards {
+.feature_cards { /*dodaj cechy firmy w formie 4 wśrodkowanych (gridem) kart z ikonami, powiększające się po najechaniu z gradientem*/
     height: 40vh;
+    display: grid;
+    grid-template-columns: 15% 15%;
+    grid-template-rows: 10% 10%;
 }
 
 
