@@ -11,6 +11,9 @@ html {
 }
 
 body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     margin: auto;
     padding: 0;
@@ -252,7 +255,6 @@ main {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
-
     overflow: hidden;
     gap: 6px;
   }
@@ -319,7 +321,7 @@ main {
     justify-self: end;
     animation: 
       moveHorizontal 8.5s 0.5s 1,
-      shrinkHorizontal 2s 9s ease-in 1;
+      shrinkHorizontal 2s 9s ease-in-out 1;
     animation-fill-mode: forwards;
   }
   
