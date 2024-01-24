@@ -110,7 +110,7 @@ header{
   
 #banner {
     position: relative;
-    width: 100%; 
+    flex: 1;
     height: 80vh; 
     margin-top: 80px; 
     display: flex;
@@ -349,8 +349,7 @@ hr{
     display: flex;
     justify-content: center;
     background-color: #f7f7f7;
-    padding: 0 0 40px 0;
-    padding-top: 3vh;
+    padding: 4vh 0 4vh 0;
     box-sizing: border-box;
 }
 
@@ -385,9 +384,8 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40vh;
     margin: 0;
-    padding: 10px 0 10px 0;
+    padding: 4.5vh 0 4.5vh 0;
     background-color: var(--third-color);
 }
 
@@ -400,7 +398,7 @@ hr{
 
 .box{
     width: 30px;
-    height: 22vh;
+    height: 23vh;
     background-color: var(--second-color);
     margin: 10px;
     cursor: pointer;

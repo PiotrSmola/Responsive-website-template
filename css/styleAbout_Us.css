@@ -330,7 +330,6 @@ hr {
 }
 
 .exp_main_text {
-    /*dodaj listę z doświadczeniem, może coś z ikonami*/
     font-size: 1.3rem;
     font-family: 'Poppins', sans-serif;
     /*inną czcionkę*/
@@ -375,12 +374,12 @@ hr {
 
 
 .feature_cards {
-    /*dodaj cechy firmy w formie 4 wśrodkowanych (gridem) kart z ikonami, powiększające się po najechaniu z gradientem*/
-    height: 45vh;
     display: grid;
-    grid-template-columns: 25% 25%;
+    grid-template-columns: 23% 23%;
     grid-template-rows: 40% 40%;
+    grid-gap: 35px;
     justify-content: center;
+    padding: 5vh 0 5vh 0;
     align-items: center;
     align-content: center;
     justify-items: center;
