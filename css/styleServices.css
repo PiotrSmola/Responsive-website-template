@@ -262,6 +262,7 @@ main {
     background-position: center;
     height: 100%;
     border-radius: 10px;
+    box-shadow: 0px 0px 100px #6f0000bc;
 }
 
 .introText {
@@ -364,6 +365,7 @@ main {
     font-weight: 400;
     font-style: normal;
     padding: 4vmin;
+    background-image: linear-gradient(to right bottom, hsl(34, 100%, 42%), hsl(178, 100%, 33%));
 }
 
 .cards {
@@ -584,7 +586,7 @@ a:link {
     justify-content: center;
     align-items: center;
     flex: 1;
-    height: 50%;
+    height: 45%;
     padding: 0 4rem;
     font-size: 1.3rem;
     line-height: 2;
@@ -655,12 +657,12 @@ a:link {
     font-weight: 400;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
-    background-color: transparent;
+    background-image: linear-gradient(to right bottom, #033b96, #ECECEC);
 }
 
 h2 {
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 2.3rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: white;
@@ -678,7 +680,7 @@ h2 {
 
 .fl-table {
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: normal;
     border: none;
     border-collapse: collapse;
@@ -695,7 +697,7 @@ h2 {
 
 .fl-table td {
     border-right: 1px solid #dbdbdb;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .fl-table td:last-child {
@@ -703,14 +705,14 @@ h2 {
 }
 
 .fl-table thead th {
-    color: #ffffff;
-    background: #02c188;
+    color: #353535;
+    background: #e8aa0087;
 }
 
 
 .fl-table thead th:nth-child(odd) {
     color: #ffffff;
-    background: #3d6b99;
+    background: #1b0568;
 }
 
 .fl-table tr:nth-child(even) {
