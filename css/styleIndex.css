@@ -148,7 +148,8 @@ header{
 	text-transform: uppercase;
 	letter-spacing: .25rem;
 	text-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 300;
 	
 }
 .upper_banner_text h5, .main_banner_text h1{
@@ -156,6 +157,9 @@ header{
 }
 .main_banner_text h1{
     margin-top: 10px;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
 }
 .main_banner_text{
     color: #000000;
@@ -377,9 +381,13 @@ hr{
 }
 
 .card p {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     text-align: center;
     color: #333;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin: 0 10px 0 10px;
 }
 

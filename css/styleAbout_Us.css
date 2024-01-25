@@ -276,15 +276,19 @@ hr {
 
 .introduction_text {
     position: relative;
+    font-family: "Work Sans", sans-serif;
 }
 
 .introduction_text h1 {
     position: absolute;
-    top: 70px;
+    top: 60px;
     right: 35%;
-    font-size: 2.7rem;
+    font-size: 3.1rem;
     color: var(--fifth-color);
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
 }
 
 .introduction_text p {
