@@ -200,6 +200,20 @@ header {
 
 }
 
+@media screen and ((min-width: 501px) and (max-width: 1280px)){
+
+    .upper_banner_text{
+        font-size: 1.7rem;
+        top: 30%;
+    }
+    
+    .main_banner_text{
+        font-size: 3.6rem;
+        top: 41%;
+    }
+    
+}
+
 #more_services {
     display: inline-block;
     position: absolute;
@@ -226,11 +240,20 @@ header {
     transition: all 0.5s ease-in-out;
 }
 
+@media screen and ((min-width: 501px) and (max-width: 1280px)){
+    
+    #more_services{
+    font-size: 1rem;
+    top: 62%;
+    height: 2.8rem;
+    }
+    
+}
+
 #more_about:hover {
     border: 4px solid #ff0059;
 }
 
-/*dopasuj kolory tła*/
 main {
     background-color: var(--third-color);
     width: 100%;
@@ -294,6 +317,22 @@ main {
 
 }
 
+@media screen and ((min-width: 501px) and (max-width: 1280px)){
+    .intro {
+        grid-template-columns: 25% 30%;
+        
+    }
+
+    .introText h1{
+        font-size: 2.5rem;
+    }
+
+    .introText p{
+        font-size: 1.2rem;
+    }
+    
+    
+}
 
 #learnMore {
     position: relative;
@@ -310,6 +349,16 @@ main {
     cursor: pointer;
     transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
     -webkit-mask-image: -webkit-radial-gradient(white, black);
+}
+
+@media screen and ((min-width: 501px) and (max-width: 1280px)){
+    
+    #learnMore{
+        font-size: 1.1rem;
+        padding: 1rem 2rem;
+    }
+    
+    
 }
 
 #learnMore #button-text {
@@ -381,6 +430,7 @@ main {
 .cards_item {
     display: flex;
     padding: 1rem;
+    width: 25%;
 }
 
 .card_image {
@@ -431,16 +481,11 @@ main {
     }
 }
 
-@media screen and ((min-width: 701px) and (max-width: 1280px)) {
+@media screen and ((min-width: 501px) and (max-width: 1280px)){
     .cards_item {
-        width: 40%;
+        width: 30%;
     }
-}
-
-@media screen and (min-width: 1281px) {
-    .cards_item {
-        width: 20%;
-    }
+    
 }
 
 .card {
@@ -512,6 +557,25 @@ main {
 
 .card_text p:last-child {
     margin: 0;
+}
+
+@media screen and ((min-width: 501px) and (max-width: 1280px)){
+    
+    .card_text p{
+        font-size: 0.95rem;
+    }
+
+    .card_title{
+        font-size: 1.65rem;
+    }
+
+    .card_content{
+        margin-top: 0;
+        margin-bottom: 0;
+        min-height: 240px;
+        max-height: 240px;
+    }
+    
 }
 
 aside {
@@ -592,6 +656,25 @@ a:link {
     line-height: 2;
 }
 
+@media screen and ((min-width: 501px) and (max-width: 1280px)){
+    
+    .modal__title{
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .modal__description{
+        font-size: 1rem;
+    }
+
+    .modal__text{
+        font-size: 1.1rem;
+        height: 44%;
+        padding: 0 3rem;
+    }
+    
+}
+
 .modal__text::before {
     content: '';
     position: absolute;
@@ -647,6 +730,17 @@ a:link {
     transform: translateY(-.2rem);
 }
 
+@media screen and ((min-width: 501px) and (max-width: 1280px)){
+    
+    .link-2{
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.3rem;
+    }
+    
+    
+}
+
 .priceTable {
     display: flex;
     flex-direction: column;
@@ -667,6 +761,15 @@ h2 {
     letter-spacing: 1px;
     color: white;
     padding: 2vh 0;
+}
+
+@media screen and ((min-width: 501px) and (max-width: 1280px)){
+    
+    h2{
+        font-size: 1.9rem;
+        margin: 15px auto;
+    }
+    
 }
 
 .table-wrapper {
@@ -800,104 +903,142 @@ h2 {
 
 footer {
     width: 100%;
-}
-
-.footer_container {
+  }
+  
+  .footer_container {
     display: grid;
+    font-family: "Manrope", sans-serif;
     grid-template-columns: 2fr 3fr;
     box-sizing: border-box;
-    color: #FFFFFF;
+    color: #ffffff;
     padding: 30px 10px 30px 10px;
     width: 100%;
     gap: 20px;
-}
-
-.left_side {
+  }
+  
+  .left_side {
     display: grid;
     grid-template-columns: 20% 80%;
     align-items: center;
     justify-items: center;
-}
-
-.footer_text {
-    font-size: 1.1rem;
+  }
+  
+  .footer_text {
+    font-size: 0.95rem;
     margin-left: 10px;
     padding: 0 10px 0 10px;
-}
-
-.footer_links {
+    font-weight: 400;
+    letter-spacing: 0.08rem;
+  }
+  
+  @media screen and ((min-width: 501px) and (max-width: 1280px)) {
+    .footer_text {
+      font-size: 0.8rem;
+    }
+    .footer_container{
+      padding: 20px 10px 20px 10px;
+    }
+  }
+  
+  .footer_links {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 1.2rem;
-}
-
-.link_container {
+  }
+  
+  .link_container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin: 5px;
-}
-
-.footer_social {
+  }
+  
+  .footer_social {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-}
-
-.socialMedia_links img {
+  }
+  
+  .socialMedia_links img {
     width: 50px;
     height: 50px;
     margin: 5px;
-}
-
-.right_side {
+  }
+  
+  .right_side {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
-}
-
-.footer_links a {
+  }
+  
+  .footer_links a {
     list-style: none;
     text-decoration: none;
-    color: #FFFFFF;
-}
-
-.links {
+    color: #ffffff;
+  }
+  
+  .links {
     display: flex;
     flex-direction: column;
-    font-size: 1.2rem;
-
-}
-
-.footer_links h6,
-.footer_social h6 {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
+  }
+  
+  .footer_links h6,
+  .footer_social h6 {
+    font-size: 1.5rem;
     margin: 0 0 10px 0;
-}
-
-.footer_logo img {
+  }
+  
+  @media screen and ((min-width: 501px) and (max-width: 1280px)){
+      
+  .footer_links h6, .footer_social h6{
+      font-size: 1.3rem;
+      margin: 0 0 5px 0;
+  }
+  
+  .links {
+      font-size: 1rem;
+      
+  }
+  
+  .socialMedia_links img{
+      width: 40px;
+      height: 40px;
+      margin: 5px;
+  }
+  
+  }
+  
+  .footer_logo img {
     height: 100px;
     width: 100px;
     padding: 10px;
-}
-
-.link_container img {
+  }
+  
+  .link_container img {
     width: 30px;
     height: 30px;
     margin-right: 10px;
-}
-
-.copyright {
+  }
+  
+  .copyright {
     display: flex;
     flex: 1;
     justify-content: center;
     align-items: center;
     background-color: #000000;
-    color: #FFFFFF;
+    color: #ffffff;
     padding: 10px;
     font-size: 1.2rem;
-}
+  }
+  
+  @media screen and ((min-width: 501px) and (max-width: 1280px)) {
+    .copyright {
+      font-size: 1.05rem;
+    }
+  }
+  
