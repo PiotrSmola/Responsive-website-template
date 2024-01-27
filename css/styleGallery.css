@@ -442,7 +442,7 @@ main {
     transition: transform 0.5s ease-in-out;
 }
 
-ooter {
+footer {
     width: 100%;
   }
   
@@ -476,10 +476,21 @@ ooter {
     .footer_text {
       font-size: 0.8rem;
     }
-    .footer_container{
+    .footer_container {
       padding: 20px 10px 20px 10px;
     }
   }
+  
+  @media screen and (max-width: 500px) {
+      .footer_text{
+          font-size: 0.7rem;
+      }
+      .footer_container{
+          display: flex;
+          flex-direction: column;
+          padding: 15px 10px 15px 10px;
+      }
+    }
   
   .footer_links {
     display: flex;
@@ -534,31 +545,53 @@ ooter {
     margin: 0 0 10px 0;
   }
   
-  @media screen and ((min-width: 501px) and (max-width: 1280px)){
-      
-  .footer_links h6, .footer_social h6{
+  @media screen and ((min-width: 501px) and (max-width: 1280px)) {
+    .footer_links h6,
+    .footer_social h6 {
       font-size: 1.3rem;
       margin: 0 0 5px 0;
-  }
+    }
   
-  .links {
+    .links {
       font-size: 1rem;
-      
-  }
+    }
   
-  .socialMedia_links img{
+    .socialMedia_links img {
       width: 40px;
       height: 40px;
       margin: 5px;
+    }
   }
   
-  }
+  @media screen and (max-width: 500px) {
+      .footer_links h6,
+      .footer_social h6{
+          font-size: 1rem;
+      }
+  
+      .links{
+          font-size: 0.8rem;
+      }
+  
+      .socialMedia_links img{
+          width: 30px;
+          height: 30px;
+          margin: 5px;
+      }
+    }
   
   .footer_logo img {
     height: 100px;
     width: 100px;
     padding: 10px;
   }
+  
+  @media screen and (max-width: 500px) {
+      .footer_logo img{
+          height: 60px;
+          width: 60px;
+      }
+    }
   
   .link_container img {
     width: 30px;
@@ -582,4 +615,10 @@ ooter {
       font-size: 1.05rem;
     }
   }
+  
+  @media screen and (max-width: 500px) {
+      .copyright{
+          font-size: 0.9rem;
+      }
+    }
   
