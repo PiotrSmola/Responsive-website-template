@@ -117,7 +117,7 @@ header {
     flex-wrap: wrap;
 }
 
-#aboutBanner {
+#servicesBanner {
     width: 100%;
     height: 80vh;
     margin-top: 80px;
@@ -125,6 +125,12 @@ header {
     grid-template-columns: 1fr 1fr;
     overflow: hidden;
     background-color: var(--fifth-color);
+}
+
+@media screen and (max-width: 500px) {
+    #servicesBanner {
+        height: 60vh;
+    }
 }
 
 
@@ -214,6 +220,21 @@ header {
     
 }
 
+@media screen and (max-width: 500px) {
+    .upper_banner_text {
+        font-size: 1.5rem;
+        top: 27%;
+        right: -45%;
+        color: #ffbeed;
+    }
+    .main_banner_text{
+        font-size: 2.3rem;
+        text-align: center;
+        top: 40%;
+        right: -55%;
+    }
+}
+
 #more_services {
     display: inline-block;
     position: absolute;
@@ -248,6 +269,16 @@ header {
     height: 2.8rem;
     }
     
+}
+
+@media screen and (max-width: 500px) {
+    #more_services {
+        font-size: 0.9rem;
+        top: 75%;
+        right: -52%;
+        height: 2.2rem;
+        padding: 0 1rem;
+    }
 }
 
 #more_about:hover {
@@ -328,8 +359,7 @@ main {
 
 @media screen and ((min-width: 501px) and (max-width: 1280px)){
     .intro {
-        grid-template-columns: 25% 30%;
-        
+        grid-template-columns: 25% 30%;        
     }
 
     .introText h1{
@@ -338,9 +368,29 @@ main {
 
     .introText p{
         font-size: 1.2rem;
+        margin-bottom: 2vh;
     }
     
     
+}
+
+@media screen and (max-width: 500px) {
+    .intro {
+        grid-template-columns: 40% 45%;
+        padding: 35px 0 35px 0;
+    }
+
+    .introImage{
+        min-width: min-content;
+    }
+
+    .introText h1{
+        font-size: 1.5rem;
+    }
+
+    .introText p{
+        font-size: 0.9rem;
+    }
 }
 
 #learnMore {
@@ -366,8 +416,13 @@ main {
         font-size: 1.1rem;
         padding: 1rem 2rem;
     }
-    
-    
+}
+
+@media screen and (max-width: 500px) {
+    #learnMore {
+        font-size: 0.9rem;
+        padding: 0.8rem 1.5rem;
+    }
 }
 
 #learnMore #button-text {
@@ -486,7 +541,7 @@ main {
 
 @media screen and (max-width: 700px) {
     .cards_item {
-        width: 70%;
+        width: 90%;
     }
 }
 
@@ -587,6 +642,38 @@ main {
     
 }
 
+@media screen and (max-width: 500px) {
+    .card_title {
+        font-size: 1.4rem;
+    }
+
+    .card_content {
+        margin-top: 0;
+        margin-bottom: 0;
+        min-height: 200px;
+        max-height: 200px;
+    }
+
+    .card_text p {
+        font-size: 0.8rem;
+    }
+
+    .card_image {
+        max-height: 200px;
+    }
+
+    .card_price{
+        font-size: 1.5rem;
+        width: 50px;
+        height: 50px;
+    }
+
+    .card_price span {
+        font-size: 1.1rem;
+        margin-top: -2px;
+    }
+}
+
 aside {
     --modalBackground: linear-gradient(to right bottom, hsl(290, 100%, 30%), hsl(178, 100%, 32%));
     display: flex;
@@ -684,6 +771,28 @@ a:link {
     
 }
 
+@media screen and (max-width: 500px) {
+
+    .modal{
+        width: 80vw;
+        height: 35vh;
+    }
+    .modal__title {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .modal__description {
+        font-size: 0.9rem;
+    }
+
+    .modal__text {
+        font-size: 1rem;
+        height: 44%;
+        padding: 0 2rem;
+    }
+}
+
 .modal__text::before {
     content: '';
     position: absolute;
@@ -711,6 +820,13 @@ a:link {
 .link-1:focus {
     transform: translateY(-.2rem);
     box-shadow: 0 0 4.4rem .2rem hsla(236, 50%, 50%, 0.4);
+}
+
+@media screen and (max-width: 500px) {
+    .link-1 {
+        font-size: 1.1rem;
+        padding: 0.8rem 1.5rem;
+    }
 }
 
 .link-2 {
@@ -779,6 +895,13 @@ h2 {
         margin: 15px auto;
     }
     
+}
+
+@media screen and (max-width: 500px) {
+    h2{
+        font-size: 1.5rem;
+        margin: 15px auto 0 auto;
+    }
 }
 
 .table-wrapper {
@@ -873,7 +996,7 @@ h2 {
         overflow-x: hidden;
         overflow-y: auto;
         width: 120px;
-        font-size: 13px;
+        font-size: 12px;
         text-overflow: ellipsis;
     }
 
@@ -906,6 +1029,12 @@ h2 {
     .fl-table tbody td {
         display: block;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .table-wrapper{
+        margin: 10px 0 30px 0;
     }
 }
 
