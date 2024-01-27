@@ -278,11 +278,20 @@ main {
     overflow: hidden;
 }
 
+@media screen and ((min-width: 1281px) and (max-width: 1919px)){
+    .intro {
+        grid-template-columns: 25% 30%;
+        
+    }
+     
+}
+
 .introImage {
     background-image: url("../images/services/introImage.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    min-width: 330px;
     height: 100%;
     border-radius: 10px;
     box-shadow: 0px 0px 100px #6f0000bc;
