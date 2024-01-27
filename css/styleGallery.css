@@ -91,6 +91,11 @@ nav a:hover {
         padding: 14px 16px;
         float: right;
     }
+    .logo img {
+        height: 80px;
+        width: 80px;
+        padding: 10px;
+    }
 
     nav ul {
         display: none;
@@ -100,6 +105,10 @@ nav a:hover {
 
     nav ul li {
         text-align: left;
+    }
+
+    nav a{
+        font-size: 16px;
     }
 
     #menu-toggle:checked+.hamburger-icon+nav ul {
@@ -121,6 +130,12 @@ header {
     overflow: hidden;
     background-color: var(--fifth-color);
     filter: grayscale(0%)
+}
+
+@media screen and (max-width: 500px) {
+    #galleryBanner {
+    height: 60vh;    
+    }
 }
 
 .banner_image {
@@ -177,6 +192,15 @@ header {
     
 }
 
+@media screen and (max-width: 500px) {
+    
+    .upper_banner_text{
+        font-size: 1.3rem;
+        top: 30%;
+        right: -55%;
+    }
+}
+
 .upper_banner_text h3, .main_banner_text h1 {
     margin-bottom: 10px;
 }
@@ -201,6 +225,14 @@ header {
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     font-family: 'Montserrat', sans-serif;
 
+}
+
+@media screen and (max-width: 500px) {
+ .main_banner_text{
+     font-size: 3rem;
+     top: 42%;
+     right: -55%;
+ }   
 }
 
 #see_pictures {
@@ -236,6 +268,16 @@ header {
     }
     
     
+}
+
+@media screen and (max-width: 500px) {
+    #see_pictures{
+        font-size: 0.85rem;
+        top: 70%;
+        right: -51%;
+        height: 2.6rem;
+        padding: 0 2rem;
+    }
 }
 
 #see_pictures:hover {
@@ -430,6 +472,13 @@ main {
         width: 70%;
     }
     
+}
+
+@media screen and (max-width: 500px) {
+    .otherImages{
+        grid-template-columns: repeat(2, 1fr);
+        width: 85%;
+    }
 }
 
 .otherImages img {

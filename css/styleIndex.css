@@ -90,6 +90,11 @@ nav a:hover {
     padding: 14px 16px;
     float: right;
   }
+  .logo img {
+    height: 80px;
+    width: 80px;
+    padding: 10px;
+}
 
   nav ul {
     display: none;
@@ -100,6 +105,10 @@ nav a:hover {
   nav ul li {
     text-align: left;
   }
+
+  nav a{
+    font-size: 16px;
+}
 
   #menu-toggle:checked + .hamburger-icon + nav ul {
     display: flex;
