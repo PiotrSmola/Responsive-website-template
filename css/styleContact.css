@@ -124,7 +124,7 @@ header {
     flex-wrap: wrap;
 }
 
-#aboutBanner {
+#contactBanner {
     width: 100%;
     height: 80vh;
     margin-top: 80px;
@@ -134,8 +134,11 @@ header {
     background-color: var(--third-color);
 }
 
-
-
+@media screen and (max-width: 500px) {
+    #contactBanner {
+        height: 60vh;
+    }
+}
 
 .banner_image {
     background-image: url(../images/contact/bannerContact.png);
@@ -190,6 +193,14 @@ header {
     
 }
 
+@media screen and (max-width: 500px) {
+    .upper_banner_text{
+        font-size: 1.4rem;
+        top: 30%;
+        right: -50%;
+    }
+}
+
 .upper_banner_text h3,
 .main_banner_text h1 {
     margin-bottom: 10px;
@@ -225,6 +236,15 @@ header {
     
 }
 
+@media screen and (max-width: 500px) {
+    .main_banner_text{
+        font-size: 2.6rem;
+        top: 42%;
+        left: 17%;
+        text-shadow: 2px 2px 0px #ffffff62;
+    }
+}
+
 #goTo_contact {
     display: inline-block;
     position: absolute;
@@ -257,6 +277,16 @@ header {
         top: 65%;
     }
     
+}
+
+@media screen and (max-width: 500px) {
+    #goTo_contact{
+        font-size: 2vh;
+        top: 80%;
+        right: -55%;
+        padding: 0 1rem;
+        height: 2.2rem;
+    }
 }
 
 #more_about:hover {
@@ -304,6 +334,16 @@ main {
 @media screen and ((min-width: 501px) and (max-width: 1280px)){
     .form h1{
         font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .form {
+        width: 85vw;
+        padding: 3vh 5vw;
+    }
+    .form h1{
+        font-size: 1.4rem;
     }
 }
 
@@ -365,6 +405,24 @@ label {
     
 }
 
+@media screen and (max-width: 500px) {
+    label{
+        font-size: 0.8rem;
+    }
+
+    input{
+        font-size: 0.7rem;
+    }
+
+    .form h1{
+        margin-top: 0;
+    }
+
+    #agreements label{
+        font-size: 0.7rem;
+    }
+}
+
 .topic {
     margin-bottom: 0;
     margin-top: 0;
@@ -390,6 +448,12 @@ select {
         font-size: 0.9rem;
     }
     
+}
+
+@media screen and (max-width: 500px) {
+    select{
+        font-size: 0.75rem;
+    }
 }
 
 [type="submit"], [type="reset"] {
