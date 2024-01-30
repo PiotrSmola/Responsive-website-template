@@ -332,6 +332,10 @@ main {
 }
 
 @media screen and ((min-width: 501px) and (max-width: 1280px)){
+  .form{
+      width: 70vw;
+      max-width: 650px;
+  }
     .form h1{
         font-size: 1.5rem;
     }
