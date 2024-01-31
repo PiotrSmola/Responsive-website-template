@@ -1078,7 +1078,7 @@ footer {
     letter-spacing: 0.08rem;
   }
   
-  @media screen and ((min-width: 501px) and (max-width: 1280px)) {
+  @media screen and ((min-width: 1025px) and (max-width: 1280px)) {
     .footer_text {
       font-size: 0.8rem;
     }
@@ -1097,6 +1097,21 @@ footer {
           padding: 15px 10px 15px 10px;
       }
     }
+  
+    @media screen and ((min-width: 501px) and (max-width: 1024px)) {
+    .footer_text{
+      font-size: 0.8rem;
+    
+    }
+    .footer_container{
+      padding: 20px 10px 20px 10px;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+  .left_side{
+    grid-template-columns: 30% 70%;
+  }
+  }
   
   .footer_links {
     display: flex;
