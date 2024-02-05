@@ -1018,7 +1018,7 @@ h2 {
     margin: 10px 70px 70px;
 }
 
-.fl-table {
+.responsive-table {
     border-radius: 5px;
     font-size: 19px;
     font-weight: normal;
@@ -1031,7 +1031,7 @@ h2 {
 }
 
 @media screen and ((min-width: 501px) and (max-width: 1024px)) {
-    .fl-table {
+    .responsive-table {
         font-size: 20px;
     }
 
@@ -1041,45 +1041,45 @@ h2 {
 
 }
 
-.fl-table td, .fl-table th {
+.responsive-table td, .responsive-table th {
     text-align: center;
     padding: 10px;
 }
 
-.fl-table td {
+.responsive-table td {
     border-right: 1px solid #dbdbdb;
     font-size: 16px;
 }
 
-.fl-table td:last-child {
+.responsive-table td:last-child {
     border-right: 0px;
 }
 
-.fl-table thead th {
+.responsive-table thead th {
     color: #353535;
     background: #e8aa0087;
 }
 
 @media screen and ((min-width: 501px) and (max-width: 1024px)) {
-    .fl-table td {
+    .responsive-table td {
         font-size: 18px;
     }
 
 }
 
 
-.fl-table thead th:nth-child(odd) {
+.responsive-table thead th:nth-child(odd) {
     color: #ffffff;
     background: #1b0568;
 }
 
-.fl-table tr:nth-child(even) {
+.responsive-table tr:nth-child(even) {
     background: #ececec;
 }
 
 
 @media (max-width: 550px) {
-    .fl-table {
+    .responsive-table {
         display: block;
         width: 100%;
     }
@@ -1093,26 +1093,26 @@ h2 {
         padding: 0 0 10px;
     }
 
-    .fl-table thead, .fl-table tbody, .fl-table thead th {
+    .responsive-table thead, .responsive-table tbody, .responsive-table thead th {
         display: block;
     }
 
-    .fl-table thead th:last-child {
+    .responsive-table thead th:last-child {
         border-bottom: none;
     }
 
-    .fl-table thead {
+    .responsive-table thead {
         float: left;
     }
 
-    .fl-table tbody {
+    .responsive-table tbody {
         width: auto;
         position: relative;
         overflow-x: auto;
     }
 
-    .fl-table td, .fl-table th {
-        padding: 20px .625em .625em .625em;
+    .responsive-table td, .responsive-table th {
+        padding: 20px .630em .630em .630em;
         height: 60px;
         vertical-align: middle;
         box-sizing: border-box;
@@ -1123,33 +1123,33 @@ h2 {
         text-overflow: ellipsis;
     }
 
-    .fl-table thead th {
+    .responsive-table thead th {
         text-align: left;
         border-bottom: 1px solid #f7f7f9;
     }
 
-    .fl-table tbody tr {
+    .responsive-table tbody tr {
         display: table-cell;
     }
 
-    .fl-table tbody tr:nth-child(odd) {
+    .responsive-table tbody tr:nth-child(odd) {
         background: none;
     }
 
-    .fl-table tr:nth-child(even) {
+    .responsive-table tr:nth-child(even) {
         background: transparent;
     }
 
-    .fl-table tr td:nth-child(odd) {
-        background: #F8F8F8;
+    .responsive-table tr td:nth-child(odd) {
+        background: #eaeaea;
         border-right: 1px solid #E6E4E4;
     }
 
-    .fl-table tr td:nth-child(even) {
+    .responsive-table tr td:nth-child(even) {
         border-right: 1px solid #E6E4E4;
     }
 
-    .fl-table tbody td {
+    .responsive-table tbody td {
         display: block;
         text-align: center;
     }
