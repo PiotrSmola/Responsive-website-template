@@ -581,10 +581,10 @@ main {
     margin-top: -2px;
 }
 
-.note {
+.topNote {
     position: absolute;
-    top: 8px;
-    left: 8px;
+    top: 12px;
+    left: 12px;
     padding: 4px 8px;
     border-radius: 0.25rem;
     background-color: #dbb610;
